@@ -1,0 +1,7 @@
+{
+  "name": "weather-app-with-es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hudson Holanda <hudsonholanda55@gmail.com> (https://lzhudson.github.io/)",
+  "license": "MIT"
+}
