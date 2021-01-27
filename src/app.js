@@ -1,10 +1,14 @@
 import UI from './ui';
 import Weather from './weather';
+import Storage from './storage';
 
 const weather = new Weather('London', 'UK');
 const ui = new UI();
+const storage = new Storage();
 
-weather.changeLocation('São Paulo', 'BR');
+const weatherLocation = storage.getLocationData();
+
+weather.changeLocation(weatherLocation.city, weatherLocation.country);
 
 document.getElementById('w-change-btn').addEventListener('click', (e) => {
   const city = document.getElementById('city').value;
