@@ -5,4 +5,9 @@ class Storage {
     this.defaultCity = 'Fortaleza';
     this.defaultCountry = 'BR';
   }
+
+  setLocationData(city, country) {
+    localStorage.setItem('city', city);
+    localStorage.setItem('state', country);
+  }
 }
